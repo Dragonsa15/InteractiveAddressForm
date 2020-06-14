@@ -1,7 +1,7 @@
 module.exports = {
     database:
       process.env.MongoUrl,
-      port: 3030,
+      port: process.env.PORT,
       secret: 'Saksham_Agarwal_is_Best_Coder',
       email: 'farad70263@lefaqr5.com',
       MapTilesToken: process.env.MapTilesToken,
