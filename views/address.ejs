@@ -1,0 +1,31 @@
+<%- include ('./partials/header') %>
+
+<div class="container my-3">
+    <h1>All the Address</h1>
+    <p>
+        This page right now displays all the address though later
+        we can make it user based on its tokens
+    </p>
+    
+    <div class="row">    
+    <% for(var i=0;i<address.length;i++) { %>
+        <div class="col-4">
+        <div class="card" style="width: 18rem; display: flex;">
+                <div class="card-body">
+                    <h5 class="card-title">Address <%= i %></h5>
+                    <p class="card-text m-0"><%= address[i].addr1 %> </p>
+                    <p class="card-text m-0"><%= address[i].city %> </p>
+                    <p class="card-text m-0"><%= address[i].state %></p>
+                    <p class="card-text m-0"><%= address[i].country , address.postalCode %></p>
+                </div>
+            </div>
+        </div>
+    <% } %>
+    
+</div>
+    
+    <div class="mt-5">
+    <a href="/">Go back</a>
+    </div>
+</div>
+<%- include ('./partials/footer') %>
