@@ -55,6 +55,6 @@ app.get("/address",(req,res) => {
 
 
 
-app.listen('3030',function() {
+app.listen(process.env.PORT,process.env.IP,function() {
     console.log("Listening on port 3030");
 });
